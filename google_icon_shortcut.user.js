@@ -19,7 +19,7 @@ function setIcon() {
         window.setTimeout(setIcon, 100);
         return false;
     }
-    var iconList = document.querySelectorAll('li.gb_b a');
+    var iconList = document.querySelectorAll('li.gb_k a');
     
     var div = document.querySelector('div.gb_oa'); //write classname unique classname in [min-width:270] div element 
     
@@ -29,7 +29,7 @@ function setIcon() {
         pid = iconList[i].getAttribute('data-pid');
         if (pid != undefined && viewPidList[pid] === true) {
             icon = iconList[i].cloneNode();
-            icon.querySelector('span.gb_h') .remove();
+            icon.querySelector('span.gb_o') .remove();
             div.insertBefore(icon, div.firstChild);
         }
     }
